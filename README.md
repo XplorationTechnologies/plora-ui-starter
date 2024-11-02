@@ -1,23 +1,19 @@
 # Plora UI Starter
 
-This project was generated using the official [Nuxt UI Starter](https://nuxt.new/) and has been enhanced with additional dependencies and configurations to support rapid development with Nuxt 3. Designed for flexibility, it serves as a solid foundation for building applications within the **Plora** organization.
+This project is generated using the official [Nuxt UI Starter](https://nuxt.new/) and has been enhanced with additional dependencies and configurations. It serves as a minimal starting point for building applications with Nuxt 3.
 
-Refer to the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) for additional guidance.
+For further details, refer to the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction).
 
 ## Features
 
-- **Nuxt 3 Framework**: Built on Nuxt 3 for modern, modular web development
-- **Integrated Modules**:
-  - `@nuxt/ui`: Nuxt UI components
-  - `@pinia/nuxt`: State management using Pinia
-  - `@sidebase/nuxt-auth`: Authentication support
-- **Development Tools**:
-  - ESLint for code linting and formatting
-  - Full TypeScript support with type checking via `vue-tsc`
+- Built with Nuxt 3
+- Integrates @nuxt/ui, @pinia/nuxt, and @sidebase/nuxt-auth modules
+- Includes ESLint for linting and code formatting
+- Full TypeScript support with type checking via vue-tsc
 
 ## Setup
 
-To get started, install the necessary dependencies:
+Make sure to install the dependencies:
 
 ```bash
 # npm
@@ -35,7 +31,7 @@ bun install
 
 ## Development Server
 
-Run the development server at `http://localhost:3000`:
+Start the development server at `http://localhost:3000`:
 
 ```bash
 # npm
@@ -85,16 +81,16 @@ yarn preview
 bun run preview
 ```
 
-For deployment information, refer to the [deployment documentation](https://nuxt.com/docs/getting-started/deployment).
+For more information, please refer to the [deployment documentation](https://nuxt.com/docs/getting-started/deployment).
 
 ## Additional Scripts
 
-This template includes several useful scripts:
+This project includes several useful scripts:
 
-- **Linting**: `pnpm lint` - Runs ESLint to identify and fix issues in the codebase.
-- **Code Formatting**: `pnpm format` - Automatically formats code based on ESLint configuration.
-- **Type Checking**: `pnpm typecheck` - Runs type checking with `vue-tsc` and `nuxi`.
+- **Linting**: `pnpm lint` (runs ESLint for code linting)
+- **Code Formatting**: `pnpm format` (fixes code format using ESLint)
+- **Type Checking**: `pnpm typecheck` (runs type checking with vue-tsc and nuxi)
 
 ## License
 
-This is under the [MIT License](LICENSE).
+This project is open source and available under the [MIT License](LICENSE).

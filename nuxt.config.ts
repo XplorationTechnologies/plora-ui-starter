@@ -19,14 +19,17 @@ export default defineNuxtConfig({
   // Nuxt Image Configuration (https://image.nuxt.com/advanced/static-images)
   nitro: {
     prerender: {
-      routes: [],
+      routes: [
+        "/_ipx/_/dots.svg",
+        "/_ipx/_/circle-blur.svg",
+      ],
     },
   },
 
   modules: ["@nuxt/ui", "@nuxt/image", "@nuxt/fonts", "@pinia/nuxt", "@sidebase/nuxt-auth"],
   colorMode: {
-    preference: "light", // default value of $colorMode.preference
-    fallback: "light", // fallback value if not system preference found
+    preference: "system", // default value of $colorMode.preference
+    fallback: "dark", // fallback value if not system preference found
   },
 
   // Nuxt Font Configuration (https://fonts.nuxt.com)
@@ -64,6 +67,19 @@ export default defineNuxtConfig({
           method: "get",
         },
         signOut: false,
+      },
+      refresh: {
+        isEnabled: true,
+        endpoint: {
+          path: "auth/refresh",
+          method: "post",
+        },
+        token: {
+          refreshRequestTokenPointer: "/refreshToken",
+          signInResponseRefreshTokenPointer: "/accessToken",
+          cookieName: "auth.token",
+          maxAgeInSeconds: 3600,
+        },
       },
       token: {
         signInResponseTokenPointer: "/accessToken",

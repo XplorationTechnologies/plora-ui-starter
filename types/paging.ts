@@ -1,1 +1,5 @@
-export interface Paging {}
+export interface Paging {
+  total: number;
+  skip: number;
+  limit: number;
+}

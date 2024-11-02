@@ -17,6 +17,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     },
   });
 
+  // Expose to useNuxtApp().$api
   return {
     provide: {
       api,
