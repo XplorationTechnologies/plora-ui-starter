@@ -1,4 +1,4 @@
-# Plora UI Starter Template
+# Plora UI Starter
 
 This project was generated using the official [Nuxt UI Starter](https://nuxt.new/) and has been enhanced with additional dependencies and configurations to support rapid development with Nuxt 3. Designed for flexibility, it serves as a solid foundation for building applications within the **Plora** organization.
 
